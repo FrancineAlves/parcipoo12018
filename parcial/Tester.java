@@ -10,14 +10,14 @@ public class Tester {
 		Automovel a1 = new Automovel("ARP1351", Marca.FORD, "Focus",new Motorista("Francine Alves","096.173.739-55"));
 		Automovel a2 = new Automovel("MET1431", Marca.FIAT, "Palio",new Motorista("Brendhon Bonatti","971.325.086-95"));
 		Automovel a3= new Automovel("MAS5465", Marca.RENAULT, "Clio",new Motorista("Maria Alves","193.426.850-05"));
-		Automovel a4 = new Automovel("ASF17567", Marca.RENAULT, "Logan",new Motorista("JosÈ Cunha","195.320.748-05"));
+		Automovel a4 = new Automovel("ASF17567", Marca.RENAULT, "Logan",new Motorista("Jos√© Cunha","195.320.748-05"));
 		
-		Motocicleta m1 = new Motocicleta("ADR3521", Marca.HONDA, "CG 150 Fan",new Motorista("Jo„o Alfredo","486.910.325-70"));
+		Motocicleta m1 = new Motocicleta("ADR3521", Marca.HONDA, "CG 150 Fan",new Motorista("Jo√£o Alfredo","486.910.325-70"));
 		Motocicleta m2 = new Motocicleta("MIT8561", Marca.HONDA, "CBR 1000RR Fireblade",new Motorista("Joana Smith","620.798.431-50"));
 		Motocicleta m3 = new Motocicleta("MIT8561", Marca.YAMAHA, "XVS950A MIDNIGHT STAR",new Motorista("Lucas Silva","601.984.325-42"));
 		Motocicleta m4 = new Motocicleta("AMP8561", Marca.SUZUKI, "Bandit 1250",new Motorista("Francisco Ribeiro","190.358.472-88"));
 		
-		Estacionamento estacionamento = new Estacionamento(3);
+		Estacionamento estacionamento = new Estacionamento(60);
 		
 	
 		estacionamento.estacionarVeiculo(m1);
@@ -33,27 +33,27 @@ public class Tester {
 			System.out.println(estacionamento.veiculos.get(i).toString());
 		}
 		
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(m1));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(a1));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(m2));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(a2));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(m3));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(a3));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(m4));
-		System.out.println("Valor de CobranÁa: " + estacionamento.retirarVeiculoDoEstacionamento(a4));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(m1));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(a1));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(m2));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(a2));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(m3));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(a3));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(m4));
+		System.out.println("Valor de Cobran√ßa: " + estacionamento.retirarVeiculoDoEstacionamento(a4));
 		
 		
 		for (int i = 0; i <estacionamento.veiculos.size();i++){
 			System.out.println(estacionamento.veiculos.get(i).toString());
 		}
 	
-	PlacaProvider pp = new PlacaProvider();
+		PlacaProvider pp = new PlacaProvider();
 		Collections.sort(estacionamento.veiculos,pp);
 	
 
-	for(Veiculo a:estacionamento.veiculos)
-		System.out.println(a);	
+		for(Veiculo a:estacionamento.veiculos)
+			System.out.println(a);	
 		
-}
+	}
 }
 
